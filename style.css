@@ -864,7 +864,7 @@ body.scrolling{
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-device-width: 480px) and (orientation: portrait){
     body{
         background-color: lightseagreen;
         overflow-x: hidden;
