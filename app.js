@@ -142,19 +142,43 @@ particular();
 const myProfil = () =>{
     const propil = document.querySelector("aside .cartoon-2 .my-self .self .main-box .oval-1 .irfin");
     const imagee = document.querySelector("aside .darknest .all-profil");
+    const getImg = document.querySelector("aside .darknest .all-profil img");
     const placeDark = document.querySelector("aside .darknest");
     const close = document.querySelector("aside .darknest .all-profil .close");
+    const getScroll = document.querySelector("body");
     
-    propil.addEventListener("click", function(){
+    propil.addEventListener("click", function(e){
         // console.log("OK");
-        placeDark.classList.add("darkfull");
+        const dark = placeDark.classList.toggle("darkfull");
         imagee.classList.add("see");
+        
+        setTimeout(() =>{
+            getImg.classList.add("fadeImg");
+
+            if(getImg.classList.contains("fadeImg")){
+                setTimeout(() =>{
+                    close.classList.add("fadeClose");
+                }, 600)
+            }
+        }, 100);
+
+        console.log(dark);
+        // I have e Problem
+
+        if(dark == true){
+            getScroll.classList.add("scrolling");
+        
+        }
     })
 
     close.addEventListener("click", function(){
         console.log("closerr");
         placeDark.classList.remove("darkfull");
         imagee.classList.remove("see");
+        getScroll.classList.remove("scrolling");
+        close.classList.remove("fadeClose");
+        getImg.classList.remove("fadeImg");
+
     });
 }
 
@@ -201,27 +225,60 @@ const myResponsive = () =>{
     const textSwap = document.querySelector("aside .cartoon-2 .my-self .text-self");
     const line1 = document.querySelector("aside .cartoon-2 .my-self .line-1");
 
-    $(window).scroll(function(){
-        const wScroll = $(this).scrollTop();
-        console.log(wScroll);
+    if(window.matchMedia("(max-width: 564px)").matches){
+        // console.log("hello");
+        const allNav = document.querySelectorAll("header nav ul li");
+        const navLine = document.querySelector(".nav-line");
+
+        navLine.addEventListener("click", function(){
+            allNav.forEach((nav, idx) =>{
+                if(nav.classList.contains("effectNav")){
+                    setTimeout(() =>{
+                        nav.classList.remove("effectNav");
+                    }, 500);
+                    console.log("remove");
+                    
+                    nav.style.animation = `reverseSense 0.80s ease-in ${idx / 7}s`
+                    
+                }else{
+   
+                    setTimeout(() =>{
+                        nav.classList.add("effectNav");
+                    }, 500)
+    
+                    nav.style.animation = `sense 0.80s ease-in ${idx / 7 }s`;
+                }
 
 
-        if(window.matchMedia("(max-width: 564px)").matches){
-            // console.log("hello");
+            })
+        })
+
+
+
+
+
+        // Effect Main
+        $(window).scroll(function(){
+            const wScroll = $(this).scrollTop();
+            // console.log(wScroll);
+     
             if(wScroll >= $(textSwap).offset().top - 450){
-                console.log("okoko");
+                // console.log("okoko");
                 // textSwap.style.backgroundColor = "red";
                 textSwap.classList.add("effectText");
                 
                 setTimeout(() =>{
                     line1.classList.add("effectLine1");
                 }, 400)
-            };
-
-        };
+            };     
     
+        });
+        
+        // Effect Main
+    };
 
-    });
+
+   
 
 
 };

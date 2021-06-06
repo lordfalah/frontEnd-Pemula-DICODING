@@ -8,6 +8,10 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body.scrolling{
+    overflow-y: hidden;
+}
+
 
 /* ABout Me End*/
  
@@ -22,7 +26,7 @@ body{
         background-size: cover;
         display: flex;
         /* height: 100%; */
-        height: 40px;
+        height: 60px;
         width: 100%;
         /* justify-items: center; */
         align-items: center;
@@ -35,13 +39,20 @@ body{
         right: 0;
         /* bottom: -200px; */
     }
+
+    header .fox{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     nav ul{
         display: flex;
         width: 100%;
         list-style: none;
         /* background-color: aqua; */
-        background-image: url("./img/pikist-4.jpg");
+        /* background-image: url("./img/pikist-4.jpg"); */
         background-size: cover;
     }
     
@@ -53,9 +64,9 @@ body{
         font-weight: lighter;
         transition: 0.40s ease-in-out;
         font-size: 18px;
+        transition: 0.40s ease;
+        display: inline-block;
     }
-    
-    
     
     nav ul .nav-line{
         display: flex;
@@ -90,7 +101,7 @@ body{
     
     nav ul li a:hover{
         color: lightcoral;
-        transform: scale(1.5);
+        transform: scale(1.3);
     }
     
     main{
@@ -99,7 +110,7 @@ body{
         background-repeat: repeat;
         background-position-y: -300px;
         width: 100%;
-        height: 3200px;
+        height: 3800px;
     }
     
     
@@ -618,11 +629,22 @@ body{
         max-width: 500px;
         height: 75vh;
         background-size: cover;
-        
+        box-shadow: 0 0 7px 3px black;
+        opacity: 0;
+        transition: 0.80s ease-in-out;
+        transform: translateY(-200px);
+        visibility: hidden;
     }
     
+    aside .darknest .all-profil img.fadeImg{
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+    }
     
     aside .darknest .all-profil .close{
+        padding-bottom: 25px;
+        box-sizing: border-box;
         cursor: pointer;
         width: 520px;
         font-size: 40px;
@@ -630,7 +652,23 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
+        opacity: 0;
+        transition: 0.80s ease-in-out;
+        visibility: hidden;
+        font-weight: bold;
+        transition: 0.40s ease;
+        text-shadow: 2px 2px black;
+    }
+
+    aside .darknest .all-profil .close:hover{
         color: red;
+        text-shadow: 0 0 15px salmon;
+    }
+
+    aside .darknest .all-profil .close.fadeClose{
+        opacity: 1;
+        visibility: visible;
     }
     
     aside .bio-me{
@@ -690,7 +728,7 @@ body{
     
     aside .bio-me .square .skil-me{
         width: 100%;
-        color: white;
+        color: black;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -706,6 +744,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
     }
     
     aside .bio-me .square .skil-me .web-designer{
@@ -716,6 +755,8 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
+        /* margin: 30px; */
     }
     
     aside .bio-me .square .skil-me .data-me{
@@ -725,21 +766,25 @@ body{
     
     aside .bio-me .square .skil-me .data-me .namee{
         padding: 10px;
+        font-size: 17.5px;
         box-sizing: border-box;
     }
     
     aside .bio-me .square .skil-me .data-me .addres{
         padding: 10px;
+        font-size: 17.5px;
         box-sizing: border-box;
     }
     
     aside .bio-me .square .skil-me .data-me .telphone{
         padding: 10px;
+        font-size: 17.5px;
         box-sizing: border-box;
     }
     
     aside .bio-me .square .skil-me .data-me .gmail{
         padding: 10px;
+        font-size: 17.5px;
         box-sizing: border-box;
     }
     
@@ -836,7 +881,44 @@ body{
         top: 0;
         transform: translateX(140px);
         transition: 0.50s ease-in-out;
+        background-image: url("./img/pikist-4.jpg");
     }
+
+    nav ul .nav-line{
+        margin-top: 12px;
+    }
+
+    /* efect nav ul li */
+
+    @keyframes sense {
+        0%{
+            transform: translateX(200px);
+        }
+
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes reverseSense {
+        0%{
+            transform: translateX(-100px);
+        }
+
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+    header nav ul li{        
+        opacity: 0;
+    }
+
+    header nav ul li.effectNav{
+        opacity: 1;
+    }
+
+    /* efect nav ul li End*/
 
     nav ul.swapEffectNav{
         transform: translateX(-150px);
@@ -866,6 +948,7 @@ body{
     }
 
 
+
     /* Main */
 
     main{
@@ -883,7 +966,7 @@ body{
 
 
     main .ground .img-animation .text-awal{
-        width: 85%;
+        width: 84%;
         margin-left: -70px;
         /* height: 150px; */
         
@@ -1035,7 +1118,35 @@ body{
 
 
     aside .bio-me .square{
-        width: 90%;
+        width: 92%;
+        margin-left: -10px;
+    }
+
+    aside .bio-me .square .skil-me .photoshop:hover{
+        transition: 0.60s ease-in;
+        background-color: black;
+        border: 4px solid white;
+    }
+
+    aside .bio-me .square .skil-me .web-designer:hover{
+        transition: 0.60s ease-in;
+        background-color: black;
+        border: 4px solid white;
+    }
+
+    aside .bio-me .square .skil-me .web-designer{
+        margin: 30px;
+    }
+
+    aside .darknest.darkfull{
+        bottom: -3000px;
+        left: 0;
+    }
+
+    aside .darknest .all-profil img{
+        max-width: 450px;
+        height: 65vh;
+        margin-left: 25px;
     }
 
     /* Article */
@@ -1048,6 +1159,7 @@ body{
     /* footer */
     footer{
         width: 100%;
+        height: 280px;
     }
 
     footer .all-text-judul{
@@ -1059,6 +1171,7 @@ body{
     footer .follow{
         display: flex;
         width: 100%;
+        height: 200px;
         padding: 20px;
         box-sizing: border-box;
         justify-content: space-between;
