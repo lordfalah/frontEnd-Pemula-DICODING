@@ -161,7 +161,7 @@ body.scrolling{
         border-radius: 50%;
         position: absolute;
         bottom: -65px;
-        left: 350px;
+        left: 300px;
         width: 200px;
         height: 200px;
         opacity: 0.9;
@@ -183,7 +183,7 @@ body.scrolling{
         box-shadow: 0 0 7px 2px rgb(36, 35, 35);
         position: absolute;
         top: -140px;
-        left: 360px;
+        left: 300px;
         width: 330px;
         height: 330px;
         opacity: 0.9;
@@ -233,7 +233,7 @@ body.scrolling{
         align-items: center;
         width: 35%;
         height: 30%;
-        margin-left: 60px;
+        margin-top: -45px;
     }
     
     .ground .img-animation .text-awal p{
@@ -441,7 +441,7 @@ body.scrolling{
     }
     
     aside .cartoon-2 .animat.lingkaran-7{
-        transform: translateX(0px);
+        transform: translateX(20px);
     }
     
     
@@ -976,10 +976,11 @@ body.scrolling{
 
     main .ground .img-animation .text-awal{
         width: 84%;
-        margin-left: -70px;
-        /* height: 150px; */
-        
+        margin-left: -95px;
+        height: 150px;
+        position: relative;
     }
+    
 
     main .text-awal .trumble{
         width: 85%;
@@ -1001,11 +1002,28 @@ body.scrolling{
 
     #content article .text-wedo .cartoon-1 .arrow{
         margin-bottom: 100px;
+        margin-right: -50px;
     }
 
     #content article .text-wedo .cartoon-1 h2{
         margin-right: 30px;
     }
+
+    main .ground .particle-1{
+        /* background-color: rgb(245, 245, 69); */
+        background-image: url("./img/pikist-3.jpg");
+        /* background-position-y: -10px; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        position: relative;
+        top: 40px;
+        left: 0%;
+    }
+
 
     #content article .text-wedo .cartoon-1 .particle-6{
         background-image: url("/img/pikist-3.jpg");
@@ -1017,6 +1035,7 @@ body.scrolling{
         box-shadow: 0 0 7.5px 1.3px rgb(32, 31, 31);
         transform: translateX(280px);
         transition: 0.80s ease-in-out;
+        margin-right: 100px;
     }
 
     #content article .text-wedo .cartoon-1 .particle-6.lingkaran-6{
@@ -1032,11 +1051,15 @@ body.scrolling{
     /* Article */
 
     #content article .what-wedo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        margin-left: -45px;
+        /* padding: 20px; */
     }
 
 
@@ -1046,10 +1069,11 @@ body.scrolling{
     }
 
     aside .cartoon-2 .animat{
-        width: 350px;
-        height: 350px;
+        width: 315px;
+        height: 315px;
         display: flex;
         flex-direction: column-reverse; 
+        /* margin-left: 40px; */
     }
 
     aside .cartoon-2 .animat h2{
@@ -1058,7 +1082,12 @@ body.scrolling{
         /* justify-items: flex-end; */
         /* align-items: flex-end; */
         align-content: flex-end;
-        margin: 20px -100px 0 0;
+        margin: 42px -100px 0 0;
+        /* font-size: 20px; */
+    }
+
+    aside .cartoon-2 .animat h2 strong{
+        /* font-size: 28px; */
     }
 
     aside .cartoon-2 .my-self{
@@ -1095,10 +1124,10 @@ body.scrolling{
 
     aside .cartoon-2 .my-self .self{
         display: flex;
-        width: 500px;
+        width: 450px;
         /* padding: 20px; */
         /* justify-content: center; */
-        margin-left: 100px;
+        margin-left: 10px;
     }
 
 
