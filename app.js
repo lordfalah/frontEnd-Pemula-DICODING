@@ -1,3 +1,4 @@
+
 const MyNavigation = () =>{
     const placeNav = document.querySelector("nav ul .nav-line");
     const navSpan = document.querySelector("nav ul");

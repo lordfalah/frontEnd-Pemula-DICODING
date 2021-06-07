@@ -4,7 +4,7 @@
 }
 
 html{
-    width: 1700px;
+    width: 1600px;
 }
 
 body{
@@ -978,7 +978,9 @@ body.scrolling{
         width: 84%;
         margin-left: -95px;
         height: 150px;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 
@@ -991,9 +993,8 @@ body.scrolling{
         justify-content: center;
         /* align-content: center; */
         align-items: center;
-        position: relative;
-        top: 60px;
-        right: 85px;
+        margin-left: -210px;
+        padding: 20px;
     }
 
     #content article .text-wedo .cartoon-1{
@@ -1062,7 +1063,9 @@ body.scrolling{
         /* padding: 20px; */
     }
 
-
+    aside{
+        width: 65%;
+    }
 
     aside .cartoon-2{
         margin-left: -300px;
@@ -1099,7 +1102,7 @@ body.scrolling{
     
     aside .cartoon-2 .my-self .line-1{
         position: relative; 
-        left: -240px;
+        left: -250px;
         top: 200px;
         opacity: 0; 
         transition: 0.90s ease-in-out;
@@ -1112,7 +1115,7 @@ body.scrolling{
     }
 
     aside .cartoon-2 .my-self .text-self{
-        margin: 300px 800px -450px 0;
+        margin: 300px 220px -450px 0;
         transition: 1s ease-in-out;
         /* transform: translateX(200px); */
     }
@@ -1156,8 +1159,8 @@ body.scrolling{
 
 
     aside .bio-me .square{
-        width: 92%;
-        margin-left: -10px;
+        width: 75%;
+        margin-left: -20px;
     }
 
     aside .bio-me .square .skil-me .photoshop:hover{
@@ -1203,7 +1206,17 @@ body.scrolling{
     footer .all-text-judul{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -120px;                     
+    }
+
+    footer .all-text-judul .text-zero{
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+        /* flex-wrap: wrap; */
     }
 
     footer .follow{
