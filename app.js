@@ -29,7 +29,7 @@ const allNavBar = () =>{
             const placeHref = document.querySelector(`${getHref}`);
 
             $("html, body").animate({
-                scrollTop: placeHref.offsetTop - 50
+                scrollTop: placeHref.offsetTop - 100
             }, 800);
         })
     })
@@ -225,8 +225,10 @@ const myResponsive = () =>{
 
     const textSwap = document.querySelector("aside .cartoon-2 .my-self .text-self");
     const line1 = document.querySelector("aside .cartoon-2 .my-self .line-1");
+    const textAwal = document.querySelector("main .ground .img-animation .text-awal");
 
-    if(window.matchMedia("(max-width: 564px)").matches){
+
+    if(window.matchMedia("(max-width: 480px)").matches){
         // console.log("hello");
         const allNav = document.querySelectorAll("header nav ul li");
         const navLine = document.querySelector(".nav-line");
@@ -271,7 +273,16 @@ const myResponsive = () =>{
                 setTimeout(() =>{
                     line1.classList.add("effectLine1");
                 }, 400)
-            };     
+            };
+            
+            if(wScroll >= $(textAwal).offset().top - 0){
+                // console.log("hello");
+
+                setTimeout(() =>{
+                    textAwal.classList.add("textPerl");
+                }, 500);
+                
+            }
     
         });
         

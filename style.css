@@ -35,7 +35,6 @@ body.scrolling{
         /* justify-items: center; */
         align-items: center;
         justify-content: space-around;
-        position: relative;
         z-index: 5;
         position: fixed;
         top: 0;
@@ -927,6 +926,12 @@ body.scrolling{
         opacity: 1;
     }
 
+    header nav ul li a{
+        color: black;
+        font-size: 21px;
+        font-weight: bolder;
+    }
+
     /* efect nav ul li End*/
 
     nav ul.swapEffectNav{
@@ -981,6 +986,14 @@ body.scrolling{
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.90s ease-in-out;
+        position: relative;
+        transform: translateX(-420px);
+
+    }
+
+    main .ground .img-animation .text-awal.textPerl{
+        transform: translateX(0px);
     }
     
 
@@ -1185,9 +1198,9 @@ body.scrolling{
     }
 
     aside .darknest .all-profil img{
-        max-width: 450px;
-        height: 65vh;
-        margin-left: 25px;
+        max-width: 380px;
+        height: 63vh;
+        margin-left: 60px;
     }
 
     /* Article */
@@ -1204,12 +1217,12 @@ body.scrolling{
     }
 
     footer .all-text-judul{
-        width: 100%;
+        width: 90%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-left: -120px;                     
+        margin-left: -95px;               
     }
 
     footer .all-text-judul .text-zero{
@@ -1219,9 +1232,13 @@ body.scrolling{
         /* flex-wrap: wrap; */
     }
 
+    footer .all-text-judul .text-three-3{
+        margin-top: 45px;
+    }
+
     footer .follow{
         display: flex;
-        width: 100%;
+        width: 73.5%;
         height: 200px;
         padding: 20px;
         box-sizing: border-box;
@@ -1247,6 +1264,10 @@ body.scrolling{
     footer .follow .logo-4 a img{
         width: 60px;
         height: 60px;
+    }
+
+    footer .copyRight{
+        width: 66.5%;
     }
 
     /* footer */
