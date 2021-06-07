@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    width: 1700px;
+}
+
 body{
     overflow-x: hidden;
     font-family: 'Josefin Sans', sans-serif;
@@ -865,9 +869,14 @@ body.scrolling{
 
 
 @media screen and (max-device-width: 480px) and (orientation: portrait){
-    body{
+    body, html{
         background-color: lightseagreen;
         overflow-x: hidden;
+        width: 100%;
+    }
+    
+    html{
+        width: 560px;
     }
 
     nav ul{
@@ -911,7 +920,7 @@ body.scrolling{
     }
 
     header nav ul li{        
-        opacity: 0;
+        /* opacity: 0; */
     }
 
     header nav ul li.effectNav{
@@ -921,7 +930,7 @@ body.scrolling{
     /* efect nav ul li End*/
 
     nav ul.swapEffectNav{
-        transform: translateX(-150px);
+        transform: translateX(-120px);
     }
 
 
@@ -939,7 +948,7 @@ body.scrolling{
     }
 
     nav ul .nav-line.line-three{
-        transform: translateX(120px);
+        transform: translateX(80px);
     }
 
     nav ul .nav-line span{
