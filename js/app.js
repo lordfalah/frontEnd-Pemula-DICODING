@@ -2,6 +2,7 @@
 const MyNavigation = () =>{
     const placeNav = document.querySelector("nav ul .nav-line");
     const navSpan = document.querySelector("nav ul");
+    
 
     placeNav.addEventListener("click", function(){
         navSpan.classList.toggle("swapEffectNav");
@@ -27,6 +28,7 @@ const allNavBar = () =>{
         nav.addEventListener("click", function(e){
             const getHref = this.getAttribute("href");
             const placeHref = document.querySelector(`${getHref}`);
+            // console.log(getHref)
 
             $("html, body").animate({
                 scrollTop: placeHref.offsetTop - 100
@@ -39,7 +41,7 @@ const allNavBar = () =>{
         const placeHref = document.querySelector(`${getHref}`);
 
         $("html, body").animate({
-            scrollTop: placeHref.offsetTop - 50
+            scrollTop: placeHref.offsetTop - 80
         }, 800);
         
     })
@@ -230,16 +232,26 @@ const myResponsive = () =>{
 
     if(window.matchMedia("(max-width: 480px)").matches){
         // console.log("hello");
-        const allNav = document.querySelectorAll("header nav ul li");
+        const allNav = document.querySelectorAll("header nav ul li a");
         const navLine = document.querySelector(".nav-line");
+        const tromble = document.querySelector(".text-awal .trumble .tombol-1 h3 a");
+
+        
+        clickTromble(tromble);
+        navigation(allNav);
+
 
         navLine.addEventListener("click", function(){
+            // const myNav = navigation(th)
+           
+
             allNav.forEach((nav, idx) =>{
+
                 if(nav.classList.contains("effectNav")){
                     setTimeout(() =>{
                         nav.classList.remove("effectNav");
                     }, 500);
-                    console.log("remove");
+                    // console.log("remove");
                     
                     nav.style.animation = `reverseSense 0.80s ease-in ${idx / 7}s`
                     
@@ -275,7 +287,7 @@ const myResponsive = () =>{
                 }, 400)
             };
             
-            if(wScroll >= $(textAwal).offset().top - 0){
+            if(wScroll >= $(textAwal).offset().top - 100){
                 // console.log("hello");
 
                 setTimeout(() =>{
@@ -294,8 +306,57 @@ const myResponsive = () =>{
 
 
 };
-
 myResponsive();
+
+
+// navigation Click
+
+function navigation(nav){   
+    
+    nav.forEach(allNav =>{
+        allNav.addEventListener("click", function(){
+            const getTag = this.getAttribute("href");
+            const placeTag = document.querySelector(`${getTag}`);
+            const navUl = document.querySelector("nav .link-nav");
+            const navLine = document.querySelector("nav ul .nav-line");            
+
+            $("html, body").animate({
+                scrollTop: placeTag.offsetTop - 350
+            }, 500);
+
+            if(navUl.classList.contains("swapEffectNav")){
+                // console.log("yaha");
+                navUl.classList.remove("swapEffectNav")
+            }
+
+            if(navLine.classList.contains("line-three")){
+                // console.log("ntap")
+                navLine.classList.remove("line-three")
+            }
+
+
+
+        })
+    })
+
+
+}
+
+function clickTromble(trumb){
+    trumb.addEventListener("click", function(){
+        const btnTrumb = this.getAttribute("href");
+        const placeBtn = document.querySelector(`${btnTrumb}`);
+
+        $("html, body").animate({
+            scrollTop: placeBtn.offsetTop - 295
+        })
+        
+    })
+}
+
+
+// navigation Click
+
 
 // Responsive End
 
