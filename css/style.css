@@ -26,7 +26,7 @@ body.scrolling{
 
     header{
         /* background-color: aqua; */
-        background-image: url("../img/kertas-3.jpg");
+        background-image: url("/img/kertas-3.jpg");
         background-size: cover;
         display: flex;
         /* height: 100%; */
@@ -110,7 +110,7 @@ body.scrolling{
     }
     
     main{
-        background-image: url("../img/pikist.jpg");
+        background-image: url("/img/pikist.jpg");
         background-size: cover;
         background-repeat: repeat;
         background-position-y: -300px;
@@ -121,7 +121,7 @@ body.scrolling{
     
     main .ground .particle-1{
         /* background-color: rgb(245, 245, 69); */
-        background-image: url("../img/pikist-3.jpg");
+        background-image: url("/img/pikist-3.jpg");
         /* background-position-y: -10px; */
         background-repeat: no-repeat;
         background-size: cover;
@@ -135,7 +135,7 @@ body.scrolling{
     }
     
     main .ground .particle-1 .particle-2{
-        background-image: url("../img/pikist-2.jpg");
+        background-image: url("/img/pikist-2.jpg");
         background-size: cover;
         background-repeat: repeat;
         border-radius: 50%;
@@ -156,7 +156,7 @@ body.scrolling{
     }
     
     main .ground .particle-1 .particle-3{
-        background-image: url("../img/pikist-4.jpg");
+        background-image: url("/img/pikist-4.jpg");
         background-size: cover;
         background-repeat: repeat;
         border-radius: 50%;
@@ -177,7 +177,7 @@ body.scrolling{
     }
     
     main .ground .particle-1 .particle-4{
-        background-image: url("../img/pikist-5.jpg");
+        background-image: url("/img/pikist-5.jpg");
         background-size: cover;
         background-repeat: repeat;
         border-radius: 50%;
@@ -199,7 +199,7 @@ body.scrolling{
     }
     
     main .ground .particle-1 .particle-5{
-        background-image: url("../img/pikist-6.jpg");
+        background-image: url("/img/pikist-6.jpg");
         background-size: cover;
         background-repeat: repeat;
         border-radius: 50%;
@@ -343,7 +343,7 @@ body.scrolling{
     
     
     #content article .text-wedo .cartoon-1 .particle-6{
-        background-image: url("../img/pikist-3.jpg");
+        background-image: url("/img/pikist-3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 450px;
@@ -366,7 +366,7 @@ body.scrolling{
     #content article .what-wedo{
         margin: auto;
         width: 100%;
-        background-image: url("../img/kertas-theme.jpg");
+        background-image: url("/img/kertas-theme.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: repeat;
@@ -429,7 +429,7 @@ body.scrolling{
     aside .cartoon-2 .animat{
         width: 430px;
         height: 430px;
-        background-image: url("../img/pikist-3.jpg");
+        background-image: url("/img/pikist-3.jpg");
         background-size: cover;
         border-radius: 50%;
         display: flex;
@@ -522,7 +522,7 @@ body.scrolling{
     }
     
     aside .cartoon-2 .my-self .self .main-box .oval-1 .irfin{
-        background-image: url("../img/irfin-1.jpg");
+        background-image: url("/img/irfin-1.jpg");
         background-size: cover;
         border-radius: 50%;
         border: 4px solid lightskyblue;
@@ -688,7 +688,7 @@ body.scrolling{
     aside .bio-me .square{
         width: 40%; 
         /* height: 300px; */
-        background-image: url("../img/kertas-2.jpg");
+        background-image: url("/img/kertas-2.jpg");
         background-size: cover;
         border-radius: 15px 50px 30px 5px;
         box-shadow: 7px 0 13px 2px rgba(27, 27, 27, 0.7);
@@ -725,7 +725,7 @@ body.scrolling{
         height: 180px;
         border-radius: 50%;
         border: 4px solid white;
-        background-image: url("../img/Si-tampan.jpg");
+        background-image: url("/img/Si-tampan.jpg");
         background-size: cover;
         background-position-y: -50px;
         margin: 30px auto;
@@ -891,7 +891,7 @@ body.scrolling{
         top: 0;
         transform: translateX(140px);
         transition: 0.50s ease-in-out;
-        background-image: url("../img/kertas-3.jpg");
+        background-image: url("/img/kertas-3.jpg");
     }
 
     nav ul .nav-line{
@@ -968,7 +968,7 @@ body.scrolling{
     /* Main */
 
     main{
-        background-image: url("../img/pikist.jpg");
+        background-image: url("/img/pikist.jpg");
         background-size: cover;
         background-repeat: repeat;
         /* background-position-y: -300px; */
@@ -1027,7 +1027,7 @@ body.scrolling{
 
     main .ground .particle-1{
         /* background-color: rgb(245, 245, 69); */
-        background-image: url("../img/pikist-3.jpg");
+        background-image: url("/img/pikist-3.jpg");
         /* background-position-y: -10px; */
         background-repeat: no-repeat;
         background-size: cover;
@@ -1042,7 +1042,7 @@ body.scrolling{
 
 
     #content article .text-wedo .cartoon-1 .particle-6{
-        background-image: url("../img/pikist-3.jpg");
+        background-image: url("/img/pikist-3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 300px;
