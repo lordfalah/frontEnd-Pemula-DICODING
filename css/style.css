@@ -868,6 +868,129 @@ body.scrolling{
     /* Content End*/
 
 
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+    /* some CSS here */
+
+    /* body{display: none;} */
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    header .fox{
+        display: flex;
+        width: 1%;
+        /* justify-content: flex-end; */
+        margin-right: -20px;
+    }
+
+    header nav{
+        width: 90%;
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    main .ground{
+        width: 100%;
+    }
+
+    main .ground .particle-1{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: 1%; 
+        
+    }
+
+    main .ground .particle-1 .particle-2{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 280px;
+    }
+
+    main .ground .img-animation{
+        width: 100%;
+        position: absolute;
+        top: 110px;
+        left: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main .ground .img-animation img{
+        width: 350px;
+        height: 250px;
+    }
+
+    main .ground .img-animation .text-awal p{
+        font-size: 18.5px;
+    }
+
+    main .ground .img-animation .text-awal .trumble{
+        font-size: 15px;
+        width: 200px;
+        margin-left: -330px;
+        margin-top: -55px;
+        text-align: start;
+    }
+
+
+    #content article .text-wedo .cartoon-1{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -200px;
+        margin-bottom: 60px;
+    }
+
+
+    #content article .text-wedo .cartoon-1 .particle-6{
+        width: 250px;
+        height: 250px;
+        margin-left: -300px;
+        position: relative;
+        top: 140px;
+    }
+
+    #content article .text-wedo .cartoon-1 .particle-6 img{
+        width: 210px;
+        height: 210px;
+        position: absolute;
+        top: -55px;
+        left: -6px;
+    }
+
+    #content article .what-wedo{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: flex-start; */
+        margin-left: -1px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     body, html{
