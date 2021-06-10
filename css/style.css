@@ -872,6 +872,10 @@ body.scrolling{
 @media screen and (max-device-width: 640px) and (orientation: landscape){
     /* some CSS here */
 
+    html{
+        /* width: 100%; */
+    }
+
     /* body{display: none;} */
     header{
         display: flex;
@@ -895,6 +899,10 @@ body.scrolling{
         justify-content: flex-start;
     }
 
+    main{
+        width: 88%;
+    }
+
     main .ground{
         width: 100%;
     }
@@ -902,23 +910,23 @@ body.scrolling{
     main .ground .particle-1{
         width: 400px;
         height: 400px;
+        margin-left: 100px;
         position: relative;
-        left: 1%; 
-        
     }
 
     main .ground .particle-1 .particle-2{
         width: 250px;
         height: 250px;
         position: absolute;
-        top: 280px;
+        top: 300px;
+        left: -10px;
     }
 
     main .ground .img-animation{
         width: 100%;
         position: absolute;
         top: 110px;
-        left: 10px;
+        left: 235px;
         display: flex;
         justify-content: space-evenly;
     }
@@ -936,16 +944,25 @@ body.scrolling{
         font-size: 15px;
         width: 200px;
         margin-left: -330px;
-        margin-top: -55px;
+        margin-top: -25px;
         text-align: start;
+    }
+
+    #content article .text-wedo{
+        display: flex;
+        justify-content: center;
     }
 
 
     #content article .text-wedo .cartoon-1{
         display: flex;
         justify-content: flex-start;
-        margin-left: -200px;
+        margin-left: -400px;
         margin-bottom: 60px;
+    }
+
+    #content article .text-wedo .cartoon-1 .arrow{
+        margin-left: 150px;
     }
 
 
@@ -967,20 +984,222 @@ body.scrolling{
 
     #content article .what-wedo{
         display: flex;
-        width: 80%;
-        flex-wrap: wrap;
+        width: 75%;
         flex-direction: column;
         justify-content: center;
-        /* align-items: flex-start; */
-        margin-left: -1px;
+        justify-items: center;
     }
 
+    #content article .what-wedo .brand, .mobile, .deskop{
+        margin: auto;
+        margin-right: 650px;
+    }
+
+
+    aside .cartoon-2 .animat{
+        width: 280px;
+        height: 280px;
+    }
+
+    aside .cartoon-2 .animat img{
+        width: 200px;
+        height: 200px;
+    }
+
+    aside .cartoon-2 .animat h2{
+        font-size: 22px;
+        /* margin-left: -20px; */
+        margin-right: 15px;
+    }
+
+    aside .cartoon-2 .animat h2 strong{
+        font-size: 35px;
+    }
+
+    aside .cartoon-2 .my-self{
+        margin-left: -20px;
+    }
+
+    aside .cartoon-2 .my-self .line-1{
+        height: 200px;
+    }
+
+
+    aside .cartoon-2 .my-self .text-self{
+        margin-left: -10px;
+        margin-top: -130px;
+        width: 5%;
+    }
+
+    aside .cartoon-2 .my-self .text-self h3{
+        font-size: 16px;
+
+    }
+
+    aside .cartoon-2 .my-self .self{
+        width: 60%;
+        height: 450px;
+        /* margin-right: 100px; */
+    }
+
+    aside .cartoon-2 .my-self .self .main-box{
+        margin-left: 10px;
+    }
 
 
   }
 
 
 
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    /* some CSS here */
+
+    nav ul{
+        margin-left: 25px;
+    }
+
+    main .ground .particle-1{
+        margin-left: -100px;
+        transform: scale(0.8);
+        position: relative;
+        margin-top: -30px;
+    }
+
+    main .ground .img-animation .text-awal{
+        position: absolute;
+        right: 50px;
+    }
+
+    main .ground .img-animation .text-awal h1{
+        font-size: 25px;
+    }
+
+    main .ground .img-animation .text-awal p{
+        font-size: 18px;
+    }
+
+    main .ground .particle-1 .particle-2{
+        margin-bottom: -50px;
+        margin-left: 60px;
+    }
+
+    .ground .img-animation .text-awal .trumble{
+        margin-left: -110px;
+        margin-top: 50px;
+    }
+
+    #content article .text-wedo .cartoon-1 .particle-6.lingkaran-6{
+        width: 200px;
+        height: 200px;
+        margin-right: 220px;
+        transform: translateX(200px);
+        position: relative;
+    }
+
+    #content article .text-wedo .cartoon-1 .particle-6 img{
+        transform: scale(0.7) translateY(-60px) translateX(60px);
+        margin-left: -60px;
+        margin-bottom: 500px;
+    }
+
+    #content article .what-wedo .brand, .mobile, .deskop{
+        margin-right: 95px;
+        width: 70%;
+    }
+
+    #content article .what-wedo .mobile{
+        width: 70%;
+    }
+
+    #content article .what-wedo .deskop{
+        width: 70%;
+    }
+
+
+    aside .cartoon-2{
+        width: 100%;
+    }
+
+    aside .cartoon-2 .animat.lingkaran-7{
+        transform: scale(0.8);
+    }
+
+    aside .cartoon-2 .animat h2{
+        font-size: 18px;
+    }
+
+    aside .cartoon-2 .animat h2 strong{
+        font-size: 35px;
+    }
+
+    aside .cartoon-2 .my-self{
+        margin-left: 5px;
+        width: 55%;
+    }
+
+    aside .cartoon-2 .my-self .self .main-box.swapBox{
+        width: 45%;
+        padding: 10px;
+        margin-left: -40px;
+    }
+
+    aside .cartoon-2 .my-self .self .main-box .oval-1{
+        width: 150px;
+        height: 150px;
+    }
+
+    aside .cartoon-2 .my-self .self .main-box .oval-1 .irfin{
+        width: 150px;
+        height: 150px;
+    }
+
+    aside .bio-me .square.swapKotak{
+        width: 55%;
+        margin-left: -30px;
+    }
+
+    aside .bio-me .square .biodata hr{
+        width: 85%;
+    }
+
+    aside .bio-me .square .oval-2{
+        width: 150px;
+        height: 150px;
+    }
+
+    aside .cartoon-2 .my-self{
+        width: 95%;
+    }
+
+    footer .all-text-judul .text-zero{
+        margin-left: -40px;
+    }
+
+    footer .all-text-judul{
+        /* width: 100px; */
+        font-size: 18px;
+        padding-right: 90px;
+    }
+
+    footer .follow .text-follow{
+        width: 25%;
+        font-size: 15px;
+        margin-left: -10px;
+    }
+
+    footer .follow .logo-1, .logo-2, .logo-3, .logo-4 a img{
+        transform: scale(0.8);
+        margin-left: -130px;
+    }
+
+    footer .copyRight{
+        font-size: 13px;
+        margin-left: -45px;
+    }
+
+  }
+  
 
 
 
