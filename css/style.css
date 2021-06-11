@@ -1642,13 +1642,13 @@ body.scrolling{
     }
 
     nav ul.navbarSwap{
-        transform: translateX(90px);
+        transform: translateX(25px);
     }
 
     nav ul .nav-line{
         position: absolute; 
         top: 15px;
-        right: 350px;
+        right: 400px;
         z-index: 5;
         display: block;
         height: 30px;
