@@ -624,6 +624,7 @@ body.scrolling{
         right: 0;
         display: none;
     }
+
     
     aside .darknest .all-profil.see{
         display: block;
@@ -1618,6 +1619,230 @@ body.scrolling{
 
 }
 
+
+@media only screen and (max-width: 600px) {
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: aqua;
+        height: 100vh;
+        width: 50vw;
+        margin-top: 660px;
+        transform: translateX(300px);
+        transition: 0.80s ease;
+    }
+
+    nav ul.navbarSwap{
+        transform: translateX(40px);
+    }
+
+    nav ul .nav-line{
+        position: absolute; 
+        top: 15px;
+        right: 320px;
+        z-index: 5;
+        display: block;
+        height: 30px;
+        width: 40px;
+    }
+
+    nav ul .nav-line span{
+        display: block;
+        width: 35px;
+        height: 5px;
+        /* opacity: 1; */
+    }
+
+    main{
+        height: 4000px;
+    }
+
+    main .ground{
+        position: relative;
+    }
+
+    main .ground .particle-1{
+        width: 400px;
+        height: 400px;
+        margin-left: -150px;
+        margin-top: 25px;
+    }
+    
+    main .ground .particle-1 .particle-2{
+        width: 250px;
+        height: 250px;
+        margin-bottom: -10px;
+    }
+
+    main .ground .particle-1 .particle-3{
+        width: 180px;
+        height: 180px;
+    }
+
+    main .ground .particle-1 .particle-4{
+        width: 300px;
+        height: 300px;
+    }
+
+    .ground .img-animation{
+        position: absolute;
+        width: 55%;
+        margin-left: -100px;
+    }
+
+    .ground .img-animation img{
+        display: none;
+    }
+
+    .ground .img-animation .text-awal{
+        margin-top: -60px;
+    }
+
+    .ground .img-animation .text-awal h1{
+        font-size: 28px;
+    }
+
+    .ground .img-animation .text-awal .trumble{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -65px;
+        width: 75%;
+    }
+
+    #content article .text-wedo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #content article .text-wedo .cartoon-1{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -350px;
+        margin-bottom: 50px;
+    }
+
+    #content article .text-wedo .cartoon-1 .particle-6{
+        margin-left: -300px;
+        width: 300px;
+        height: 300px;
+        margin-top: 350px;
+        position: relative;
+    }
+
+    #content article .text-wedo .cartoon-1 .particle-6 img{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: -45px;
+    }
+
+    #content article .what-wedo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    #content article .what-wedo .brand, .mobile, .deskop{
+        margin-left: 50px;
+    }
+
+    aside{
+        margin-left: -50px;
+    }
+
+    aside .cartoon-2{
+        width: 50%;
+    }
+
+    aside .cartoon-2 .animat{
+        width: 250px;
+        height: 250px;
+        margin-left: -50px;
+    }
+
+    aside .cartoon-2 .animat img{
+        width: 200px;
+        height: 200px;
+        margin-left: -20px;
+    }
+
+    aside .cartoon-2 .animat h2{
+        font-size: 20px;
+        margin-left: -15px;
+    }
+
+    aside .cartoon-2 .animat h2 strong{
+        font-size: 30px;
+    }
+
+    aside .cartoon-2 .my-self{
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+        margin-left: -20px;
+    }
+
+    aside .cartoon-2 .my-self .line-1{
+        margin-top: -5px;
+    }
+
+    aside .cartoon-2 .my-self .text-self{
+        margin-left: -20px;
+        font-size: 15px;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    aside .cartoon-2 .my-self .self{
+        display: flex; 
+        justify-content: flex-start;
+    }
+
+    aside .cartoon-2 .my-self .self .main-box{
+        width: 100%;
+        padding: 10px;
+        height: 425px;
+    }
+
+    aside .cartoon-2 .my-self .self .main-box .oval-1{
+        width: 170px;
+        height: 170px;
+
+    }
+
+    aside .cartoon-2 .my-self .self .main-box .oval-1 .irfin{
+        width: 170px;
+        height: 170px;
+    }
+
+    aside .cartoon-2 .my-self .self .arrow-2{
+        margin-left: -85px;
+    }
+
+    aside .bio-me{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 250px;
+        width: 60%;
+        margin-left: 100px;
+    }
+
+    aside .bio-me .square{
+        /* margin-bottom: 100px; */
+    }
+
+}
 
 
 /* Responsive ALL */

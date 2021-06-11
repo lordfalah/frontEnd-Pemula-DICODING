@@ -230,7 +230,7 @@ const myResponsive = () =>{
     const textAwal = document.querySelector("main .ground .img-animation .text-awal");
 
 
-    if(window.matchMedia("(max-width: 480px)").matches){
+    if(window.matchMedia("screen and (max-width: 480px)").matches){
         // console.log("hello");
         const allNav = document.querySelectorAll("header nav ul li a");
         const navLine = document.querySelector(".nav-line");
@@ -362,10 +362,20 @@ function clickTromble(trumb){
 
 
 
+const responsiveWeb = () =>{
+    if(window.matchMedia("(max-width: 600px)").matches){
+        const getParentSpan = document.querySelector("nav ul .nav-line");
+        const getNavLine = document.querySelector("nav ul");
+
+        getParentSpan.addEventListener("click", function(){
+            getNavLine.classList.toggle("navbarSwap");
+        })
+
+    }
+}
 
 
-
-
+responsiveWeb();
 
 
 
