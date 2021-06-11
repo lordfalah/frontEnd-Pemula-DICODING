@@ -366,9 +366,13 @@ const responsiveWeb = () =>{
     if(window.matchMedia("(max-width: 600px)").matches){
         const getParentSpan = document.querySelector("nav ul .nav-line");
         const getNavLine = document.querySelector("nav ul");
+        const navline = document.querySelector("nav ul .nav-line");
 
         getParentSpan.addEventListener("click", function(){
             getNavLine.classList.toggle("navbarSwap");
+
+            // click
+            navline.classList.toggle("swapLineThree");
         })
 
     }
